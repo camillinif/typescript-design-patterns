@@ -7,6 +7,7 @@
         "outDir": "./dist",
         "baseUrl": "./",
         "paths": {
+            "@creational/*": ["src/creational/*"],
             "@structural/*": ["src/structural/*"]
         }
     },
