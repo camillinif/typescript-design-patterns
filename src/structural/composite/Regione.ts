@@ -11,7 +11,6 @@ export default class Regione extends EnteTerritoriale {
 
     addChild(provincia: Provincia): void {
         this.province.push(provincia);
-        console.log(this.province.length);
     }
 
     getChild(): EnteTerritoriale[] {
