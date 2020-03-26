@@ -1,0 +1,55 @@
+{
+    "name": "typescript-design-patterns",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "check-dep": "npm-check -p",
+        "lint": "eslint  --ignore-path .gitignore .",
+        "changelog": "standard-version --no-verify",
+        "changelog-minor": "standard-version --no-verify --release-as minor",
+        "changelog-patch": "standard-version --no-verify --release-as patch",
+        "first-release": "standard-version --first-release",
+        "coverage": "stryker run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/config-angular": "^8.2.0",
+        "@stryker-mutator/core": "^2.4.0",
+        "@stryker-mutator/javascript-mutator": "^2.4.0",
+        "@stryker-mutator/jest-runner": "^2.4.0",
+        "@types/jest": "^25.1.4",
+        "@types/node": "^13.9.4",
+        "@typescript-eslint/eslint-plugin": "^2.16.0",
+        "@typescript-eslint/parser": "^2.16.0",
+        "commitlint": "^8.2.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-import-resolver-typescript": "^2.0.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-sonarjs": "^0.5.0",
+        "husky": "^3.1.0",
+        "jest": "^25.2.2",
+        "prettier": "^1.19.1",
+        "standard-version": "^7.0.1",
+        "ts-jest": "^25.2.1",
+        "ts-node": "^8.6.0",
+        "typescript": "^3.8.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint && npm test",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "standard-version": {
+        "skip": {
+            "tag": true
+        }
+    },
+    "dependencies": {}
+}
