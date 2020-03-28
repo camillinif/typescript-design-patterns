@@ -3,6 +3,7 @@
 ## Creational
 
 -   [Abstract Factory](src/creational/abstract-factory/README.md)
+-   [Builder](src/creational/builder/README.md)
 
 ## Structural
 

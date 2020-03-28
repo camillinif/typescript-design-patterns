@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/camillinif/typescript-design-patterns/compare/v1.1.0...v1.2.0) (2020-03-28)
+
+
+### Features
+
+* creational/builder ([bf064c2](https://github.com/camillinif/typescript-design-patterns/commit/bf064c22477cf8820992882be80c4816ad6ef1f6))
+
 ## [1.1.0](https://github.com/camillinif/typescript-design-patterns/compare/v1.0.0...v1.1.0) (2020-03-26)
 
 
